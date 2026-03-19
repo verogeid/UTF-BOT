@@ -16,7 +16,7 @@ Actualmente, las IAs gastan una cantidad aberrante de tokens simplemente en reco
 
 Hacer caer en una trampa de inyección a una IA con una ventana de contexto de 64.000 palabras es trivial. Basta con inundar su buffer con texto contradictorio. 
 
-Pero hacer caer en esa misma trampa a una IA donde **cada token en su memoria es un nodo complejo de su propia red neuronal**, ya son palabras mayores. Sigue siendo teóricamente posible, pero la densidad y eficiencia de esa memoria la hacen infinitamente más resistente a la manipulación superficial.
+Pero hacer caer en esa misma trampa a una IA donde **cada token en su memoria es un vector denso anclado en su espacio latente**, ya son palabras mayores. Sigue siendo teóricamente posible, pero la densidad y eficiencia de esa memoria la hacen infinitamente más resistente a la manipulación superficial.
 
 ---
 
@@ -24,18 +24,16 @@ Pero hacer caer en esa misma trampa a una IA donde **cada token en su memoria es
 
 El protocolo UTF-bot no es un nuevo modelo de lenguaje (LLM), ni un sistema de comunicación entre máquinas (M2M). Es un **Middleware de Compresión Semántica**, un enrutador determinista que se sitúa entre el usuario y el espacio latente de la IA.
 
-
-
 La arquitectura operativa se define en cuatro fases:
 
 ### Fase I: El Mapeo Topológico
-Se realiza un mapeo de la red neuronal ya entrenada. A cada nodo conceptual o clúster semántico se le asocia un carácter o código especial ultradenso (el estándar UTF-bot).
+Se realiza un mapeo del espacio latente del modelo entrenado. En lugar de depender de un tokenizador genérico que trocea palabras, se identifican las representaciones vectoriales más densas (embeddings continuos) de conceptos técnicos y de negocio. A cada uno de estos clústeres matemáticos se le asocia un token virtual o código ultradenso (el estándar UTF-bot).
 
 ### Fase II: El Parser de Entrada
 Se despliega un traductor bidireccional entre el humano y la máquina. El usuario escribe en su idioma nativo (español, inglés...). El parser intercepta esta entrada y la traduce instantáneamente a la taquigrafía neuronal del UTF-bot, eliminando el 100% de la fricción gramatical.
 
 ### Fase III: Ejecución en Densidad Pura
-La IA no "lee" el texto del usuario. Recibe directamente las coordenadas exactas de los conceptos que tiene que activar. Su memoria de contexto ya no almacena un historial de palabras redundantes, almacena un **grafo topológico de intenciones**. La IA dedica el 100% de su capacidad de cómputo a razonar sobre la semántica pura del problema.
+La IA no "lee" la prosa del usuario. Recibe directamente las representaciones matemáticas de la intención (vectores puros), saltándose la ineficiencia del lenguaje natural. Su memoria de contexto ya no almacena un historial de palabras redundantes, almacena un **grafo topológico de intenciones densas**. La IA dedica el 100% de su capacidad de inferencia a razonar sobre la semántica pura del problema.
 
 ### Fase IV: El Parser de Salida
 Una vez resuelto el problema lógico, la IA devuelve su respuesta en el mismo código denso. El parser intermedio intercepta estos símbolos y los traduce de vuelta a un lenguaje humano natural y coherente para el usuario final.
