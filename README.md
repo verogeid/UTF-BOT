@@ -48,5 +48,7 @@ Al eliminar el ruido del lenguaje humano de la capa de ejecución, permitimos qu
 
 Este protocolo es la capa de abstracción que la infraestructura de la inteligencia artificial necesita para dejar de colapsar bajo el peso de su propia ineficiencia.
 
+#latent-space-optimization #semantic-compression #token-efficiency #vector-embeddings #ai-resilience #symbolic-ai #context-window-management
+
 ---
 *Diseñado conceptualmente por Diego González Fernández - Estratega de Resiliencia Sistémica.*
